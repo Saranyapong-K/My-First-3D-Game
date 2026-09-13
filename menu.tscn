@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://ka7pmf1kvi7f"]
+
+[ext_resource type="Texture2D" uid="uid://cdqyjc0fuboxm" path="res://Menu.jpg" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://dcpqwnd7nuwb4" path="res://menu.gd" id="1_ouk20"]
+[ext_resource type="AudioStream" uid="uid://b8maul2ljwnq" path="res://The Mark Rober song _ Fasion _ Dansez.mp3" id="3_mae5d"]
+
+[node name="Menu" type="Node2D" unique_id=1836156587]
+script = ExtResource("1_ouk20")
+
+[node name="Menu" type="Sprite2D" parent="." unique_id=1820987356]
+position = Vector2(576, 326)
+scale = Vector2(0.6083796, 0.61763686)
+texture = ExtResource("1_lti8b")
+
+[node name="Start" type="Button" parent="." unique_id=812197711]
+offset_left = 747.0
+offset_top = 221.0
+offset_right = 983.0
+offset_bottom = 362.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 1, 0.6627451, 1)
+theme_override_colors/font_pressed_color = Color(0.91764706, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(2.7314202e-06, 0.4437277, 0.19716772, 1)
+theme_override_font_sizes/font_size = 97
+text = "Start"
+
+[node name="Setting" type="Button" parent="." unique_id=365792329]
+offset_left = 759.0
+offset_top = 364.0
+offset_right = 984.0
+offset_bottom = 460.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.9999998, 0.87556016, 0.107678, 1)
+theme_override_colors/font_hover_color = Color(0.34117648, 0.22352941, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Setting"
+
+[node name="Exit" type="Button" parent="." unique_id=935256378]
+offset_left = 778.0
+offset_top = 487.0
+offset_right = 969.0
+offset_bottom = 586.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Exit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1456767642]
+stream = ExtResource("3_mae5d")
+volume_db = -20.462
+autoplay = true
+mix_target = 1
+parameters/looping = true
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

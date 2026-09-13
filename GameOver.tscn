@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cvgq6a5xcqm50"]
+
+[ext_resource type="Script" uid="uid://j5abn8dygaai" path="res://Assets/Models/Town/game_over.gd" id="1_qwiea"]
+[ext_resource type="Texture2D" uid="uid://cgvfl0d1wg8j6" path="res://Assets/627CCDC7-297C-4464-9307-E466319B5949.jpg" id="1_tk7vj"]
+[ext_resource type="AudioStream" uid="uid://b3mawl3uy7bqg" path="res://Dark Souls ' You Died ' Sound Effect.mp3" id="3_eksk4"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_n637v"]
+
+[node name="Node2D" type="Node2D" unique_id=1025298324]
+script = ExtResource("1_qwiea")
+
+[node name="627ccdc7297c44649307E466319b5949" type="Sprite2D" parent="." unique_id=1693628909]
+position = Vector2(916.37506, 322.375)
+scale = Vector2(0.5293964, 0.6522705)
+texture = ExtResource("1_tk7vj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=849766000]
+position = Vector2(319.99997, 323)
+scale = Vector2(2.7172854, 702.0939)
+texture = SubResource("GradientTexture1D_n637v")
+
+[node name="Label" type="Label" parent="." unique_id=736427415]
+offset_right = 137.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(0.5333242, 1.0949746e-06, 2.8878452e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.30980393)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 316
+text = "Died"
+
+[node name="TryAgain" type="Button" parent="." unique_id=964921379]
+offset_left = 42.0
+offset_top = 469.0
+offset_right = 388.0
+offset_bottom = 580.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0.8549499, 0.44894797, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 75
+text = "Try Again"
+
+[node name="Exit" type="Button" parent="." unique_id=1615355414]
+offset_left = 439.0
+offset_top = 477.0
+offset_right = 520.0
+offset_bottom = 508.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(1, 0, 0.12941177, 1)
+theme_override_font_sizes/font_size = 75
+text = "Menu"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=407691821]
+stream = ExtResource("3_eksk4")
+autoplay = true
+
+[connection signal="pressed" from="TryAgain" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

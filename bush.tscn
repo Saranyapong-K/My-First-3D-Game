@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c4e7nl8n3xtv2"]
+
+[ext_resource type="PackedScene" uid="uid://dd1aqhvkpmcsw" path="res://Assets/Models/Bush by Jarlan Perez - d6STyhH76Qe.glb" id="1_8cy4n"]
+
+[node name="Bush" type="Node3D" unique_id=97678713]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="Bush by Jarlan Perez - d6STyhH76Qe" parent="." unique_id=518920038 instance=ExtResource("1_8cy4n")]

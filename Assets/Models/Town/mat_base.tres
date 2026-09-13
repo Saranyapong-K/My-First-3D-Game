@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d8l5pn0ygavh"]
+
+[ext_resource type="Texture2D" uid="uid://dlxnwe5r085wo" path="res://Assets/Models/Town/Base_citybits_texture.png" id="1_c303w"]
+
+[resource]
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(5.7756904e-07, 0.28595915, 0.015333254, 1)
+albedo_texture = ExtResource("1_c303w")

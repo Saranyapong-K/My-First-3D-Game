@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hk3jfg60dbf3"
+path="res://.godot/imported/FNAF_ Kids Cheering - Gaming Sound Effect (HD).mp3-ca9074d8677d908524f3bbee65433695.mp3str"
+
+[deps]
+
+source_file="res://FNAF_ Kids Cheering - Gaming Sound Effect (HD).mp3"
+dest_files=["res://.godot/imported/FNAF_ Kids Cheering - Gaming Sound Effect (HD).mp3-ca9074d8677d908524f3bbee65433695.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

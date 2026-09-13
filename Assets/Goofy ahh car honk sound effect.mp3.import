@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nafpedvyljtl"
+path="res://.godot/imported/Goofy ahh car honk sound effect.mp3-28e80a2f2555eb6b2b5bfb64f870becb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Goofy ahh car honk sound effect.mp3"
+dest_files=["res://.godot/imported/Goofy ahh car honk sound effect.mp3-28e80a2f2555eb6b2b5bfb64f870becb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=120.0
+beat_count=8
+bar_beats=2

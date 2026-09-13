@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://s0ivklrbwpd6"]
+
+[ext_resource type="Script" uid="uid://quocc66qmmej" path="res://win.gd" id="1_hgi8f"]
+[ext_resource type="Texture2D" uid="uid://cf21rt6pewmsa" path="res://YOU WIN.jpg" id="1_wao2c"]
+[ext_resource type="AudioStream" uid="uid://hk3jfg60dbf3" path="res://FNAF_ Kids Cheering - Gaming Sound Effect (HD).mp3" id="3_tmki8"]
+
+[node name="Win" type="Node2D" unique_id=477980709]
+script = ExtResource("1_hgi8f")
+
+[node name="YouWin" type="Sprite2D" parent="." unique_id=1575745636]
+position = Vector2(582.83325, 329.25)
+scale = Vector2(0.608507, 0.6050926)
+texture = ExtResource("1_wao2c")
+
+[node name="Button" type="Button" parent="." unique_id=1655121672]
+offset_left = 416.0
+offset_top = 486.0
+offset_right = 623.0
+offset_bottom = 593.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.22352941, 0.99607843, 0, 1)
+theme_override_font_sizes/font_size = 72
+text = "Menu
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=269381246]
+stream = ExtResource("3_tmki8")
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

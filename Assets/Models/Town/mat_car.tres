@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bkc5v4vpslg4c"]
+
+[ext_resource type="Texture2D" uid="uid://bv62ohu6ax0sy" path="res://Assets/Models/Town/Car Hatchback_citybits_texture.png" id="1_iabqb"]
+
+[resource]
+albedo_texture = ExtResource("1_iabqb")

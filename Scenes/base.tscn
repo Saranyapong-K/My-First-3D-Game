@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://poxyq1ylfpac"]
+
+[ext_resource type="PackedScene" uid="uid://csj3k1v4m3hp5" path="res://Assets/Models/Town/Base.glb" id="1_rpg24"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x3d4q"]
+size = Vector3(239, 0.09295654, 218)
+
+[node name="Base" type="StaticBody3D" unique_id=2026129915]
+
+[node name="Root Scene" parent="." unique_id=764752445 instance=ExtResource("1_rpg24")]
+transform = Transform3D(120.06416, 0, 0, 0, 1, 0, 0, 0, 109.457016, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=626809931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50219727, 0.049785435, -1.0040283)
+shape = SubResource("BoxShape3D_x3d4q")

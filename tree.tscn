@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ch6bkjmungoq7"]
+
+[ext_resource type="PackedScene" uid="uid://dc2g0s8lf166r" path="res://Assets/Models/Tree by Poly by Google - 6pwiq7hSrHr.glb" id="1_brfkd"]
+
+[node name="Tree" type="Node3D" unique_id=1460692242]
+
+[node name="Tree by Poly by Google - 6pwiq7hSrHr" parent="." unique_id=504663860 instance=ExtResource("1_brfkd")]

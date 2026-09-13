@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqk8ssbpxhmr5"
+path="res://.godot/imported/Cyberpunk 2077 OST - I Really Want to Stay at Your House (Instrumental).mp3-0bb3bf764144ae39b0656cf82de92d8a.mp3str"
+
+[deps]
+
+source_file="res://Cyberpunk 2077 OST - I Really Want to Stay at Your House (Instrumental).mp3"
+dest_files=["res://.godot/imported/Cyberpunk 2077 OST - I Really Want to Stay at Your House (Instrumental).mp3-0bb3bf764144ae39b0656cf82de92d8a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

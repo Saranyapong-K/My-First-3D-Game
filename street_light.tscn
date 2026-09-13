@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bwjhpmc630hsa"]
+
+[ext_resource type="PackedScene" uid="uid://burs67y7uf6a0" path="res://Assets/Models/Town/Streetlight.glb" id="1_1gtoh"]
+
+[node name="StreetLight" type="Node3D" unique_id=871805410]
+
+[node name="Root Scene" parent="." unique_id=1335583478 instance=ExtResource("1_1gtoh")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1458748843]
+transform = Transform3D(0.8248316, -0.5653785, 0, 0.5653785, 0.8248316, 0, 0, 0, 1, -0.19128203, 0.9127839, 0)
+light_color = Color(0.9981536, 0.8446793, 0.59693754, 1)
+distance_fade_enabled = true
+omni_range = 35.0
